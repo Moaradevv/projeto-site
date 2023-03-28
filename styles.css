@@ -1,0 +1,241 @@
+body {
+    background-color: grey;
+    font-family: Helvetica;
+    min-height: 100vh;
+    display: flex;
+}
+
+h1 {
+    font-size: 30pt;
+    font: 300 80px/1 courier;
+    color: #363636;
+    white-space: nowrap;
+    text-shadow: 2px 2px 2px gray;
+    cursor: pointer;
+    letter-spacing: 7px;
+}
+
+h2 {
+    font-size: 30pt;
+    color: #363636;
+    text-align: center;
+}
+
+h4 {
+  color:black;
+  font-size: 20px;
+  text-align: center;
+  padding: 50px 50px 50px 50px
+}
+
+h5 {
+  color:black;
+  font-size: 20px;
+  text-align: center;
+}
+
+h6 {
+   color: black;
+   font-size: 20px;
+   text-align: justify;
+   text-indent: 50px
+}
+p {
+   color:black;
+   font-size: 20px;
+   text-align: justify;
+   text-indent: 50px;
+}
+.alinhamento-texto {
+   margin-right: 100px;
+   margin-left: 100px;
+}
+.img-container {
+   text-align: center;
+   font-size: 50px;
+   margin: 50px 50px 50px 50px;
+}
+.button-container {
+   text-align: center;
+   font-size: 18px;
+}
+.my-button {
+   color: white;
+   text-align: center;
+   height: 100px;
+   width:200px;
+   background-color: #363636;
+   font-size: 18px;
+   font-style: bold;
+   border-radius: 15px;
+}
+
+.my-image {
+   margin-top: 55px;
+   height: 500px;
+   width: 600px;
+   border-radius: 100px;
+
+}
+.link-container {
+   text-align: center;
+   font-size: 25px
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus,
+*:active {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  place-items: center;
+}
+
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #ffffff;
+  border-radius:15px;
+  padding: 15px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .linkedin:hover,
+.wrapper .linkedin:hover .tooltip,
+.wrapper .linkedin:hover .tooltip::before {
+  background: #1877F2;
+  color: #363636;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #7a21b6;
+  color: #363636;
+}
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+  background: #171515;
+  color: #363636;
+}
+
+.carousel-inner {
+  height: 500px;
+  width: 600px;
+  overflow: hidden;
+  margin:  auto
+}
+
+h1 span{
+  transition: .5s linear
+}
+h1:hover span:nth-child(1){
+  margin-right: 5px
+}
+h1:hover span:nth-child(2){
+  margin-left: 30px
+}
+h1:hover span{
+  color: #fff;
+  text-shadow: 0 0 10px #fff,
+               0 0 20px #fff, 
+               0 0 40px #fff;
+}
+
+.test{
+  width: 100vw
+}
+
+.link-decoration{
+  text-decoration: none;
+  color:inherit
+}
+
+.flex {
+  display:flex;
+  width: 100%;
+  justify-content: center;
+  gap: 50px;
+  padding: 50px 50px 50px 50px
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  text-align: center;
+}
+
+.card {
+  overflow: hidden;
+  transform: scale(0.75);
+}
